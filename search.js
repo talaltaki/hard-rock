@@ -26,15 +26,10 @@ const searchSong = (keyWord) => {
 
             resultItem.innerHTML = `
                   <div class="col-md-9 d-flex align-items-center">
-                    <img class="mr-3" src="${song.album.cover_small}" />
+                    <img class="mr-3" src="${song.album.cover}" />
                     <div class="ml-2">
                        <h4 class="lyrics-name">${song.title}</h4>
                        <p class="author lead">by <span class="font-weight-bold">${song.artist.name}</span></p>
-                    </div>
-                    <div class="ml-3">
-                      <audio controls>
-                        <source src="${song.preview}">
-                      </audio>
                     </div>
                   </div>
                   <div class="col-md-3 text-md-right text-center lyrics-btn">
